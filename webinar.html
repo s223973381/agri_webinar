@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Modern Farming Webinar Registration</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4fff4;
+    }
+    .hero {
+      background: url('Agriculture-banner-image.jpg') center/cover no-repeat;
+      color: rgb(21, 123, 81);
+      padding: 80px 0;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3.2rem;
+      font-weight: 800;
+      font-family: 'Merriweather', serif;
+      letter-spacing: 1px;
+    }
+    .highlight {
+      background: #e8f8e8;
+      border-left: 6px solid #28a745;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 10px;
+    }
+    .topics i {
+      color: #28a745;
+      margin-right: 10px;
+    }
+    .certificate {
+      background: linear-gradient(135deg, #28a745, #6bcf63);
+      color: white;
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin: 30px 0;
+    }
+    .section-title {
+      text-align: center;
+      font-weight: 700;
+      margin: 50px 0 30px;
+      color: #2d572c;
+    }
+    .perk-card {
+      border: none;
+      border-radius: 12px;
+      background: #f8fff8;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.05);
+      transition: transform .2s;
+    }
+    .perk-card:hover {
+      transform: translateY(-5px);
+    }
+    .host-img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .company-box {
+      background: #f0fdf0;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>Modern Farming Explanation</h1>
+    <h4>by Harshit Godha – The Avocado Farmer</h4>
+    <p>Organized by <strong>Farm Marketing</strong></p>
+  </div>
+
+  <!-- Purpose & Details -->
+  <div class="container my-5">
+    <div class="highlight">
+      <h3>Our Purpose 🌱</h3>
+      <p>Teach young youth about the potential in agriculture.</p>
+      <p><strong>Date & Time:</strong> 21st September | 11:00 AM – 12:00 PM</p>
+      <p><strong>Expected Students:</strong> 300</p>
+      <p><strong>Price:</strong> ₹299 (Students with ID: ₹149)</p>
+      <p><strong>Focus:</strong> Agriculture students & business mindset</p>
+    </div>
+  </div>
+
+  <!-- Why Attend -->
+  <div class="container">
+    <h2 class="section-title">🌾 Why Should You Attend this Webinar?</h2>
+    <div class="row text-center">
+      <div class="col-md-4"><i class="fas fa-lightbulb fa-3x text-success mb-3"></i><p>Learn modern farming practices directly from an avocado expert.</p></div>
+      <div class="col-md-4"><i class="fas fa-chart-line fa-3x text-success mb-3"></i><p>Discover profitable agribusiness models.</p></div>
+      <div class="col-md-4"><i class="fas fa-globe fa-3x text-success mb-3"></i><p>Understand global agriculture market opportunities.</p></div>
+    </div>
+  </div>
+
+  <!-- Main Topics + Registration Form -->
+  <div class="container my-5">
+    <div class="row">
+      <!-- Topics -->
+<!-- Main Topics Covered Section -->
+<div class="col-md-6 topics" style="background:#ffffff; padding:30px; border-radius:15px; margin:30px 0; box-shadow:0px 4px 12px rgba(0,0,0,0.1);">
+  <h2 style="font-size:32px; font-weight:700; color:#2E7D32; text-align:left; margin-bottom:25px; letter-spacing:1px;">
+    🌱 Main Topics Covered
+  </h2>
+  <ul style="list-style:none; padding:0; margin:0; font-size:22px; line-height:2.2; color:#333; text-align:left;">
+    <li>✔️ Avocado Farming Basics</li>
+    <li>✔️ Modern Techniques & Best Practices</li>
+    <li>✔️ Avocado Market Trends</li>
+    <li>✔️ Profitable Selling Strategies</li>
+    <li>✔️ Expert Q&A Session</li>
+  </ul>
+</div>
+
+
+
+      <!-- Registration Form -->
+      <div class="col-md-6">
+        <h3>Register Now</h3>
+        <form class="p-4 border rounded bg-light shadow">
+          <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input type="text" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Age</label>
+            <input type="number" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Occupation</label>
+            <select class="form-select" id="occupation" required>
+              <option value="">Select...</option>
+              <option value="student">Student</option>
+              <option value="businessman">Businessman</option>
+              <option value="farmer">Farmer</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Student ID</label>
+            <input type="text" class="form-control" id="studentId" disabled placeholder="Enter ID if student">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Mobile</label>
+            <input type="tel" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" required>
+          </div>
+          <button type="submit" class="btn btn-success w-100">Register Now</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Perks -->
+  <div class="container">
+    <h2 class="section-title">🎁 Perks of Attending</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card perk-card p-3 text-center">
+          <i class="fas fa-certificate fa-2x text-success mb-2"></i>
+          <h5>Certificate</h5>
+          <p>Get a certificate of participation.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card perk-card p-3 text-center">
+          <i class="fas fa-users fa-2x text-success mb-2"></i>
+          <h5>Networking</h5>
+          <p>Connect with like-minded agriculture enthusiasts.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card perk-card p-3 text-center">
+          <i class="fas fa-leaf fa-2x text-success mb-2"></i>
+          <h5>Exclusive Insights</h5>
+          <p>Learn avocado farming/selling techniques.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Who Can Attend -->
+  <div class="container my-5">
+    <h2 class="section-title">👥 Who Can Attend?</h2>
+    <p class="text-center">This webinar is open for:</p>
+    <ul class="list-group list-group-flush text-center">
+      <li class="list-group-item"><i class="fas fa-user-graduate text-success"></i> Agriculture Students</li>
+      <li class="list-group-item"><i class="fas fa-briefcase text-success"></i> Businessmen & Entrepreneurs</li>
+      <li class="list-group-item"><i class="fas fa-tractor text-success"></i> Farmers</li>
+    </ul>
+  </div>
+
+  <!-- Meet the Host -->
+  <div class="container my-5">
+    <h2 class="section-title">🎙 Meet the Host</h2>
+    <div class="row align-items-center">
+      <div class="col-md-4">
+        <img src="host.png" class="host-img" alt="Host Harshit Godha">
+      </div>
+      <div class="col-md-8">
+        <h4>Harshit Godha</h4>
+        <p><strong>Avocado Farmer & Agripreneur</strong></p>
+        <p>Harshit has revolutionized avocado farming in India, guiding young farmers into modern agricultural practices and agribusiness. He will teach everything about avocado farming, selling strategies, and sustainable agricultural methods that bring profit.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Company -->
+  <div class="container my-5">
+    <h2 class="section-title">🏢 About Farm Marketing</h2>
+    <div class="company-box">
+      <p><strong>Farm Marketing</strong> is a company dedicated to bridging the gap between agriculture and business. We focus on empowering youth, providing innovative farming techniques, and creating profitable marketing channels for farmers.</p>
+    </div>
+  </div>
+
+  <!-- Certificates Section -->
+  <div class="container">
+    <div class="certificate">
+      🎓 All participants will receive a <u>Certificate of Participation</u> for attending the webinar!
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div class="container my-5">
+    <h3>Frequently Asked Questions</h3>
+    <div class="accordion" id="faqAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="q1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#a1">
+            What is the duration of the webinar?
+          </button>
+        </h2>
+        <div id="a1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">It will be a 1-hour session from 11:00 AM to 12:00 PM.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="q2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a2">
+            Do students get a discount?
+          </button>
+        </h2>
+        <div id="a2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Yes! Students with valid ID pay ₹149 instead of ₹299.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="q3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a3">
+            Will I get a certificate?
+          </button>
+        </h2>
+        <div id="a3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Yes, all participants will receive a certificate of participation.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Enable/Disable Student ID field
+    document.getElementById('occupation').addEventListener('change', function () {
+      const studentId = document.getElementById('studentId');
+      if (this.value === 'student') {
+        studentId.disabled = false;
+      } else {
+        studentId.disabled = true;
+        studentId.value = '';
+      }
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
