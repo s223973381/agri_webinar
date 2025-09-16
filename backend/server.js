@@ -11,11 +11,12 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // MySQL connection
+
 const db = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "",       // replace with your MySQL password
-  database: "farmmarket"
+  host: "157.173.217.98",           // your server IP
+  user: "u432539434_farmmarketing", // DB username
+  password: "Fm$123&456",           // DB password
+  database: "u432539434_farmmarketing" // DB name
 });
 
 db.connect(err => {
@@ -110,15 +111,16 @@ app.post("/payment-success", async (req, res) => {
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
       to: user.email,
-      subject: "Modern Farming Webinar Registration ✅",
+      subject: "Kheti se startup Webinar Registration ✅",
       html: `
         <h3>Hello ${user.name},</h3>
         <p>Your payment is successful! Here are your webinar details:</p>
         <ul>
-          <li><strong>Date & Time:</strong> 21st September | 11:00 AM – 12:00 PM</li>
-          <li><strong>Zoom Link:</strong> <a href="https://zoom.us/j/yourZoomMeetingID">Join Webinar</a></li>
-          <li><strong>Meeting ID:</strong> yourZoomMeetingID</li>
-          <li><strong>Passcode:</strong> 123456</li>
+          <li><strong>Date & Time:</strong> 21st September | 11:00 AM – 12:00 PM IST</li>
+          <li><strong>Zoom Link:</strong> <a href="https://us05web.zoom.us/j/89611756547?pwd=r0wGecHMRruCadlMyDoAHyXixbJVnG.1">Join Webinar</a></li>
+          <li><strong>Meeting ID:</strong> 896 1175 6547</li>
+          <li><strong>Passcode:</strong> sq8yAj</li>
+          <li><strong>Join instructions</strong> <a href="https://us05web.zoom.us/meetings/89611756547/invitations?signature=UqseGgOuUcxmZe5YHfc9dzlrVbyPMk-9ddyW9ENJzcg"></a></li
         </ul>
         <p>🌱 Farm Marketing Team</p>
       `
