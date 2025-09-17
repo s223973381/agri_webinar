@@ -420,7 +420,7 @@
 
         try {
           // 1️⃣ Send registration data to backend
-          const res = await fetch("http://localhost:5000/register", {
+          const res = await fetch("/register", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(data),
@@ -428,7 +428,7 @@
           const result = await res.json();
 
           // 2️⃣ Fetch Razorpay key from backend
-          const keyRes = await fetch("http://localhost:5000/razorpay-key");
+          const keyRes = await fetch("/razorpay-key");
           const keyData = await keyRes.json();
 
           // 3️⃣ Open Razorpay checkout
@@ -440,7 +440,7 @@
             name: "Modern Farming Webinar",
             description: "Webinar Registration",
             handler: async function (response) {
-              await fetch("http://localhost:5000/payment-success", {
+              await fetch("/payment-success", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(response),
@@ -466,6 +466,6 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- (rest of your file like sponsors, FAQ, payment script remains same) -->
+    
   </body>
 </html>
