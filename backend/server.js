@@ -119,7 +119,7 @@ app.post("/payment-success", async (req, res) => {
           <li><strong>Join instructions:</strong> <a href="https://us05web.zoom.us/meetings/88262994112/invitations?signature=Hk5sjUln47wIsNnayG90yjnqUf8fVlDMXI5h1AjKEak "></a></li>
           <li><strong>Meeting ID:</strong> 882 6299 4112</li>
           <li><strong>Passcode:</strong> 814106</li>
-<li><strong>One tap mobile</strong> +16892781000‬,,88262994112#,,,,*814106# US ; +17193594580‬,,88262994112#,,,,*814106# US</li>
+
         </ul>
         <p>🌱 Farm Marketing Team</p>
       `
@@ -139,4 +139,5 @@ app.get("/razorpay-key", (req, res) => {
 // Start server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
 
