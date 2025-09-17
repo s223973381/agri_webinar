@@ -115,9 +115,11 @@ app.post("/payment-success", async (req, res) => {
         <p>Your payment is successful! Here are your webinar details:</p>
         <ul>
           <li><strong>Date & Time:</strong> 21st September | 11:00 AM – 12:00 PM IST</li>
-          <li><strong>Zoom Link:</strong> <a href="https://us05web.zoom.us/j/89611756547?pwd=r0wGecHMRruCadlMyDoAHyXixbJVnG.1">Join Webinar</a></li>
-          <li><strong>Meeting ID:</strong> 896 1175 6547</li>
-          <li><strong>Passcode:</strong> sq8yAj</li>
+          <li><strong>Zoom Link:</strong> <a href="https://us05web.zoom.us/j/88262994112?pwd=VqqU6ar2jlZCmpAssOgmqqAea19QDN.1">Join Webinar</a></li>
+          <li><strong>Join instructions:</strong> <a href="https://us05web.zoom.us/meetings/88262994112/invitations?signature=Hk5sjUln47wIsNnayG90yjnqUf8fVlDMXI5h1AjKEak "></a></li>
+          <li><strong>Meeting ID:</strong> 882 6299 4112</li>
+          <li><strong>Passcode:</strong> 814106</li>
+<li><strong>One tap mobile</strong> +16892781000‬,,88262994112#,,,,*814106# US ; +17193594580‬,,88262994112#,,,,*814106# US</li>
         </ul>
         <p>🌱 Farm Marketing Team</p>
       `
@@ -137,3 +139,4 @@ app.get("/razorpay-key", (req, res) => {
 // Start server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
