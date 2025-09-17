@@ -417,7 +417,7 @@
           email: form.email.value,
           amount: parseInt(priceDisplay.textContent) * 100,
         };
-
+alert("Result to api"+parseInt(priceDisplay.textContent));
         try {
           // 1️⃣ Send registration data to backend
           const res = await fetch("/register", {
@@ -426,7 +426,7 @@
             body: JSON.stringify(data),
           });
           const result = await res.json();
-
+alert("Result to razorpay"+result.amount);
           // 2️⃣ Fetch Razorpay key from backend
           const keyRes = await fetch("/razorpay-key");
           const keyData = await keyRes.json();
