@@ -52,6 +52,7 @@ app.post("/register", async (req, res) => {
   try {
     const { name, age, occupation, student_id, mobile, email } = req.body;
     let amount = student_id?.toLowerCase().startsWith("l") ? 14900 : 29900;
+    let amount_final = amount;
 
     const [regResult] = await db.promise().query(
       `INSERT INTO registrations (name, age, occupation, student_id, mobile, email)
@@ -75,7 +76,7 @@ app.post("/register", async (req, res) => {
     res.json({
       registration_id,
       orderId: order.id,
-      amount: order.amount,
+      amount: amount_final,
       currency: order.currency
     });
 
@@ -139,6 +140,7 @@ app.get("/razorpay-key", (req, res) => {
 // Start server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
 
 
 
