@@ -421,7 +421,7 @@
       }
       const healthData = await healthRes.json();
       if (!healthData.healthy) {
-        alert("API not healthy: " + healthData.message);
+        alert("API Status: " + healthData.message);
         return;
       }
 
