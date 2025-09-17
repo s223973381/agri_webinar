@@ -137,9 +137,20 @@ app.get("/razorpay-key", (req, res) => {
   res.json({ key: process.env.RAZORPAY_KEY_ID });
 });
 
+// Health Check API
+app.get("/health", (req, res) => {
+  res.status(200).json({
+    status: "ok",
+    message: "API is healthy and running 🚀",
+    timestamp: new Date().toISOString()
+  });
+});
+
+
 // Start server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
 
 
 
