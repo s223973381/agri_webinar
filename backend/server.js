@@ -69,7 +69,7 @@ app.post("/register", async (req, res) => {
     await db.promise().query(
       `INSERT INTO payments (registration_id, razorpay_order_id, amount)
        VALUES (?, ?, ?)`,
-      [registration_id, order.id, amount ]
+      [registration_id, order.id, amount/100 ]
     );
 
     res.json({
@@ -139,6 +139,7 @@ app.get("/razorpay-key", (req, res) => {
 // Start server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
 
 
 
